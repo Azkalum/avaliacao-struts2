@@ -1,0 +1,99 @@
+<struts>
+    <package name="default" extends="struts-default">
+
+        <!-- Ações para Exames -->
+
+        <!-- Listar exames -->
+        <action name="listExames" class="com.seuprojeto.action.ExameAction" method="list">
+            <result name="success">/exame/listExames.jsp</result>
+        </action>
+
+        <!-- Criar exame -->
+        <action name="createExame" class="com.seuprojeto.action.ExameAction" method="create">
+            <result name="success">/exame/createExame.jsp</result>
+        </action>
+
+        <!-- Carregar exame para edição -->
+        <action name="editExame" class="com.seuprojeto.action.ExameAction" method="edit">
+            <result name="success">/exame/editExame.jsp</result>
+        </action>
+
+        <!-- Atualizar exame -->
+        <action name="updateExame" class="com.seuprojeto.action.ExameAction" method="update">
+            <result name="success">/exame/listExames.action</result>
+        </action>
+
+        <!-- Deletar exame -->
+        <action name="deleteExame" class="com.seuprojeto.action.ExameAction" method="delete">
+            <result name="success">/exame/listExames.action</result>
+        </action>
+
+        <!-- Ações para Funcionários -->
+
+        <!-- Listar funcionários -->
+        <action name="listFuncionarios" class="com.seuprojeto.action.FuncionarioAction" method="list">
+            <result name="success">/funcionario/listFuncionarios.jsp</result>
+        </action>
+
+        <!-- Criar funcionário -->
+        <action name="createFuncionario" class="com.seuprojeto.action.FuncionarioAction" method="create">
+            <result name="success">/funcionario/createFuncionario.jsp</result>
+        </action>
+
+        <!-- Carregar funcionário para edição -->
+        <action name="editFuncionario" class="com.seuprojeto.action.FuncionarioAction" method="edit">
+            <result name="success">/funcionario/editFuncionario.jsp</result>
+        </action>
+
+        <!-- Atualizar funcionário -->
+        <action name="updateFuncionario" class="com.seuprojeto.action.FuncionarioAction" method="update">
+            <result name="success">/funcionario/listFuncionarios.action</result>
+        </action>
+
+        <!-- Deletar funcionário -->
+        <action name="deleteFuncionario" class="com.seuprojeto.action.FuncionarioAction" method="delete">
+            <result name="success">/funcionario/listFuncionarios.action</result>
+        </action>
+
+        <!-- Ações para Exames Realizados -->
+
+        <!-- Listar exames realizados -->
+        <action name="listExamesRealizados" class="com.seuprojeto.action.ExameRealizadoAction" method="list">
+            <result name="success">/examesRealizados/listExamesRealizados.jsp</result>
+        </action>
+
+        <!-- Criar exame realizado -->
+        <action name="createExameRealizado" class="com.seuprojeto.action.ExameRealizadoAction" method="create">
+            <result name="success">/examesRealizados/createExameRealizado.jsp</result>
+        </action>
+
+        <!-- Carregar exame realizado para edição -->
+        <action name="editExameRealizado" class="com.seuprojeto.action.ExameRealizadoAction" method="edit">
+            <result name="success">/examesRealizados/editExameRealizado.jsp</result>
+        </action>
+
+        <!-- Atualizar exame realizado -->
+        <action name="updateExameRealizado" class="com.seuprojeto.action.ExameRealizadoAction" method="update">
+            <result name="success">/examesRealizados/listExamesRealizados.action</result>
+        </action>
+
+        <!-- Deletar exame realizado -->
+        <action name="deleteExameRealizado" class="com.seuprojeto.action.ExameRealizadoAction" method="delete">
+            <result name="success">/examesRealizados/listExamesRealizados.action</result>
+        </action>
+
+        <!-- Ações para Relatório de Exames Realizados -->
+
+        <!-- Gerar relatório -->
+        <action name="gerarRelatorioExames" class="com.seuprojeto.action.RelatorioExamesAction" method="gerarRelatorio">
+            <result name="success">/relatorioExames/exibirRelatorioExames.jsp</result>
+        </action>
+
+        <!-- Ação de Login -->
+        <action name="login" class="com.seuprojeto.action.LoginAction">
+            <result name="success">/home.jsp</result>
+            <result name="login">/login.jsp</result>
+        </action>
+
+    </package>
+</struts>
